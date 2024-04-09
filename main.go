@@ -7,7 +7,7 @@ import(
 	"os/signal"
 	"syscall"
 	"log"
-	"github.com:zhuiguang49/kusciaworking/metricexporter"
+	"github.com/zhuiguang49/kusciaworking/metricexporter"
 )
 func main(){
 	ctx, stop := signal.NotifyContext(context.Background(), syscall.SIGINT, syscall.SIGTERM)
